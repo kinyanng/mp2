@@ -1,47 +1,199 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>MP2 Starter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Walt Disney World Resort</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./css/styles.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/">Web Page</a></li>
-      </ul>
-    </div>
-  </nav>
-	<div class="row text-center">
-		<h3>Hello. It's Me.</h3>
-	</div>
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
-    </div>
-  </section>
+<div id="background"></div>
 
-  <!-- Scripts -->
-  
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation6_lib/js/foundation.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script>
+<nav id="nav-bar">
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">
+            <img src="media/logo.png" alt="Banner">
+        </div>
+    </div>
+
+    <div class="top-bar" id="main-menu">
+        <div class="top-bar-title hide-for-small-only">
+            <img src="media/logo.png" alt="Banner">
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#carousel">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#parks">The Parks</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="carousel">
+    <div><img src="media/carousel0.jpg" alt="Carousel image 1"></div>
+    <div><img src="media/carousel1.jpg" alt="Carousel image 2"></div>
+    <div><img src="media/carousel2.jpg" alt="Carousel image 3"></div>
+    <div><img src="media/carousel3.jpg" alt="Carousel image 4"></div>
+</section>
+
+<section id="about">
+    <h1>About</h1>
+
+    <p>The Walt Disney World Resort,<br>known as Disney World, is an entertainment complex in
+        Bay Lake, Florida, near Kissimmee and Orlando,<br>and is the flagship of Disney's worldwide corporate
+        empire.
+    </p>
+    <br>
+    <img src="media/disney-world-logo.png" alt="Disney World logo">
+</section>
+
+<section id="parks">
+    <h1>The Parks</h1>
+
+    <div class="row">
+        <div class="medium-6 columns">
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="parks-item" data-open="magic-kingdom">
+                        <span class="icon-magic-kingdom"></span>
+                        Magic Kingdom
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="parks-item" data-open="epcot">
+                        <span class="icon-epcot"></span>
+                        Epcot
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medium-6 columns">
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="parks-item" data-open="hollywood-studios">
+                        <span class="icon-hollywood-studios"></span>
+                        Hollywood Studios
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="parks-item" data-open="animal-kingdom">
+                        <span class="icon-animal-kingdom"></span>
+                        Animal Kingdom
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="video" class="flex-video widescreen">
+    <video width="1200" height="675" autoplay loop muted>
+        <source src="media/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section id="footer">
+    <p>Find us on</p>
+    <a href="https://www.facebook.com/WaltDisneyWorld"><img src="media/social_fb.png" alt="Facebook"
+                                                            title="Facebook"></a>
+    <a href="https://www.instagram.com/waltdisneyworld/"><img src="media/social_ig.png" alt="Instagram"
+                                                              title="Instagram"></a>
+    <a href="https://twitter.com/WaltDisneyWorld"><img src="media/social_tw.png" alt="Twitter" title="Twitter"></a>
+    <a href="https://www.youtube.com/user/DisneyParks/"><img src="media/social_yt.png" alt="YouTube"
+                                                             title="YouTube Channel"></a>
+
+    <p class="small">Walt Disney World Resort, Orlando, FL 32830</p>
+
+    <p class="small">&copy 2016 Kin Yan NG. CS498RK MP2.</p>
+</section>
+
+<!-- Modals  -->
+
+<div id="magic-kingdom" class="reveal" data-reveal>
+    <div>
+        <span class="icon icon-magic-kingdom"></span>
+
+        <p><span class="title">Magic Kingdom</span><br>
+            is the first-built of the four theme parks at the Walt Disney World Resort.<br>
+            It opened to the public on October 1, 1971.</p>
+        <img src="media/magic-kingdom.jpg" alt="Magic Kingdom">
+    </div>
+    <img class="banner" src="media/magic-kingdom.jpg" alt="Magic Kingdom">
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="epcot" class="reveal" data-reveal>
+    <div>
+        <span class="icon icon-epcot"></span>
+
+        <p><span class="title">Epcot</span><br>
+            is the second of four theme parks built at the Walt Disney World Resort.<br>
+            It opened to the public on October 1, 1982, and spans more than twice the size of Magic Kingdom.
+        </p>
+        <img src="media/epcot.jpg" alt="Epcot">
+    </div>
+    <img class="banner" src="media/epcot.jpg" alt="Epcot">
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="hollywood-studios" class="reveal" data-reveal>
+    <div>
+        <span class="icon icon-hollywood-studios"></span>
+
+        <p><span class="title">Disney's Hollywood Studios</span><br>
+            is the third of four theme parks built at the Walt Disney World Resort.<br>
+            It opened to the public on May 1, 1989.</p>
+        <img src="media/hollywood-studios.jpg" alt="Disney's Hollywood Studios">
+    </div>
+    <img class="banner" src="media/hollywood-studios.jpg" alt="Disney's Hollywood Studios">
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="animal-kingdom" class="reveal" data-reveal>
+    <div>
+        <span class="icon icon-animal-kingdom"></span>
+
+        <p><span class="title">Disney's Animal Kingdom</span><br>
+            is the fourth of four theme parks built at the Walt Disney World Resort.<br>
+            It was dedicated and opened to the public during Earth Day on April 22, 1998.</p>
+        <img src="media/animal-kingdom.jpg" alt="Disney's Animal Kingdom">
+    </div>
+    <img class="banner" src="media/animal-kingdom.jpg" alt="Disney's Animal Kingdom">
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<!-- Scripts -->
+
+<script src="./lib/jquery-2.1.3.min/index.js"></script>
+<script src="./foundation6_lib/js/foundation.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="./js/script.js"></script>
+<script>
     $(document).foundation();
-  </script>
-  <script src="http://localhost:35729/livereload.js"></script>
+</script>
+<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
